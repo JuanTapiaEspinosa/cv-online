@@ -1,0 +1,15 @@
+/* Animaciones personalizadas */
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(34, 197, 94, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4); }
+}
+
+.terminal-glow {
+    animation: glow 3s infinite;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #0ea5e9, #22c55e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
