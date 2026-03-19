@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/img/MosqueteEngranaje64-Sinfondo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <script>
         window.tailwind.config = {
@@ -218,29 +218,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="group relative overflow-hidden rounded-2xl bg-cardBg border border-slate-700 hover:border-techBlue/50 transition-all">
-                    <div class="aspect-video bg-slate-800 flex items-center justify-center p-6 overflow-hidden">
-                        <div class="grid grid-cols-2 gap-2 opacity-50">
-                            <div class="w-12 h-12 border border-slate-600 rounded"></div>
-                            <div class="w-12 h-12 border border-slate-600 rounded"></div>
-                        </div>
-                        <div class="absolute text-center">
-                            <span class="text-3xl font-mono text-white opacity-20">JAVA EE</span>
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-2xl font-bold text-white">Catálogo Java Enterprise</h3>
-                            <span class="px-3 py-1 bg-terminalGreen/10 text-terminalGreen text-xs font-bold rounded-full border border-terminalGreen/20">Completado</span>
-                        </div>
-                        <p class="text-slate-400 mb-6">Aplicación web empresarial utilizando patrones de diseño clásicos. Implementación estricta de MVC y desacoplamiento de capas mediante EJB.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-2 py-1 bg-slate-800 text-xs text-techBlue rounded">Java MVC</span>
-                            <span class="px-2 py-1 bg-slate-800 text-xs text-techBlue rounded">Servlets</span>
-                            <span class="px-2 py-1 bg-slate-800 text-xs text-techBlue rounded">EJB</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -254,32 +231,34 @@
                 <div class="md:col-span-2 space-y-8">
                     <div>
                         <h4 class="text-techBlue font-mono text-sm mb-2">EMAIL</h4>
-                        <p class="text-white font-medium">contacto@juantapia.dev</p>
+                        <p class="text-white font-medium">juan.tapia.informatica@gmail.com</p>
                     </div>
                     <div>
                         <h4 class="text-techBlue font-mono text-sm mb-2">UBICACIÓN</h4>
-                        <p class="text-white font-medium">Santiago, Chile</p>
+                        <p class="text-white font-medium">Coquimbo, Chile</p>
                     </div>
                     <div class="p-6 bg-techBlue/5 border border-techBlue/20 rounded-xl">
                         <p class="text-sm italic text-slate-300">"Capacidad analítica, liderazgo técnico y proactividad aplicada a cada línea de código."</p>
                     </div>
                 </div>
-                <form action="#" class="md:col-span-3 space-y-4" method="POST">
+                <form id="contact-form" class="md:col-span-3 space-y-4">
+                    <input type="hidden" name="_captcha" value="true">
                     <div>
                         <label class="block text-sm font-medium text-slate-400 mb-1" for="name">Nombre</label>
-                        <input class="w-full bg-cardBg border-slate-700 rounded-lg focus:ring-techBlue focus:border-techBlue text-white" id="name" name="name" required="" type="text"/>
+                        <input class="w-full bg-cardBg border-slate-700 rounded-lg focus:ring-techBlue focus:border-techBlue text-white" id="name" name="name" required type="text"/>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-slate-400 mb-1" for="email">Email</label>
-                        <input class="w-full bg-cardBg border-slate-700 rounded-lg focus:ring-techBlue focus:border-techBlue text-white" id="email" name="email" required="" type="email"/>
+                        <input class="w-full bg-cardBg border-slate-700 rounded-lg focus:ring-techBlue focus:border-techBlue text-white" id="email" name="email" required type="email"/>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-slate-400 mb-1" for="message">Mensaje</label>
-                        <textarea class="w-full bg-cardBg border-slate-700 rounded-lg focus:ring-techBlue focus:border-techBlue text-white" id="message" name="message" required="" rows="4"></textarea>
+                        <textarea class="w-full bg-cardBg border-slate-700 rounded-lg focus:ring-techBlue focus:border-techBlue text-white" id="message" name="message" required rows="4"></textarea>
                     </div>
-                    <button class="w-full py-4 bg-terminalGreen hover:bg-green-600 text-darkBg font-bold rounded-lg transition-colors shadow-lg shadow-terminalGreen/10" type="submit">
+                    <button id="submit-btn" class="w-full py-4 bg-terminalGreen hover:bg-green-600 text-darkBg font-bold rounded-lg transition-colors shadow-lg shadow-terminalGreen/10" type="submit">
                         Enviar Mensaje
                     </button>
+                    <p id="form-status" class="hidden text-center font-medium mt-4"></p>
                 </form>
             </div>
         </div>
@@ -292,10 +271,10 @@
             <a class="hover:text-techBlue transition-colors" href="#">GitHub</a>
             <a class="hover:text-techBlue transition-colors" href="#">LinkedIn</a>
         </div>
-        <p>© 2024 Juan Tapia — Programador Analista. Construido con Tailwind CSS.</p>
+        <p>© 2026 Juan Tapia — Programador Analista. Construido con Tailwind CSS.</p>
     </div>
 </footer>
-<script src="index.js"></script>
+<script src="assets/js/scripts.js"></script>
 
 </body>
 </html>
